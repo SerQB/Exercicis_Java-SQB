@@ -64,7 +64,7 @@ public class JobsController {
 		
 	//}
 	
-	public void createVolunteer(String name, String address, String phone, String description) throws Exception {
+	public void createVolunteer(String name, String address, String phone, double salaryPerMonth , String description) throws Exception {
 		Volunteer volunteer = new Volunteer(name, address, phone, description);
 		repository.addMember(volunteer);			
 	}		
